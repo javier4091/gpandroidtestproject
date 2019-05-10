@@ -2,10 +2,12 @@ package com.demo.gpusersapp;
 
 import com.loopj.android.http.*;
 
+
 public class reqresApiClient {
     private static final String BASE_URL = "https://reqres.in/api/";
 
     private static AsyncHttpClient client = new AsyncHttpClient();
+
 
     public static void get(String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {
         client.get(getAbsoluteUrl(url), params, responseHandler);
