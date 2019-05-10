@@ -2,6 +2,22 @@ package com.demo.gpusersapp;
 
 public class User {
 
+    public User(int id, String email, String name, String last_name, String avatar)
+    {
+        this.id = id;
+        this.email = email;
+        this.name = name;
+        this.last_name = last_name;
+        this.avatar = avatar;
+    }
+
+    public String toString()
+    {
+
+        return this.;
+    }
+
+
     public int getId() {
         return id;
     }
