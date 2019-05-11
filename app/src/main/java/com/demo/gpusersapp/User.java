@@ -14,7 +14,7 @@ public class User {
     public String toString()
     {
 
-        return this.;
+        return this.name + " " + this.last_name;
     }
 
 

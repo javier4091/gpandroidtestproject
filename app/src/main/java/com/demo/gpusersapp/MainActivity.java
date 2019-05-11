@@ -2,7 +2,9 @@ package com.demo.gpusersapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import com.loopj.android.http.*;
+import android.view.View;
+import android.widget.Toast;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,7 +15,13 @@ public class MainActivity extends AppCompatActivity {
 
 
         reqresApiClientUsage client = new reqresApiClientUsage();
-        client.populateUsers();
+        client.populateUsers(this);
 
+    }
+
+    //Show dialog to add new user when button is pressed
+    public void showAddUserDialog(View view)
+    {
+        
     }
 }

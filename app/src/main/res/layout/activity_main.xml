@@ -10,12 +10,33 @@
         android:id="@+id/userScrollView"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="-4dp">
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="parent">
 
         <LinearLayout
+            android:id="@+id/userDataLinearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" />
     </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addUserButton"
+        android:layout_width="0dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:onClick="showAddUserDialog"
+        app:backgroundTint="#FFFFFF"
+        app:borderWidth="@android:dimen/app_icon_size"
+        app:elevation="6dp"
+        app:fabSize="auto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:maxImageSize="48dp"
+        app:srcCompat="@android:drawable/ic_input_add" />
 </android.support.constraint.ConstraintLayout>
